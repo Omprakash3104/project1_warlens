@@ -1,0 +1,69 @@
+.how-to-use {
+    padding: 100px 0;
+    background-color: white;
+  }
+  
+  .how-to-use h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #1f2937;
+    margin-bottom: 4rem;
+  }
+  
+  .steps-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .step-item {
+    flex: 1;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+  }
+  
+  .step-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+  }
+  
+  .step-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .step-item h3 {
+    font-size: 1.5rem;
+    color: #1f2937;
+    margin-bottom: 1rem;
+  }
+  
+  .step-item p {
+    color: #6b7280;
+    line-height: 1.6;
+  }
+  
+  .step-connector {
+    position: absolute;
+    top: 40px;
+    right: -50%;
+    width: 100%;
+    height: 2px;
+    background-color: #e5e7eb;
+  }
+  
+  @media (max-width: 768px) {
+    .steps-container {
+      flex-direction: column;
+      gap: 3rem;
+    }
+  
+    .step-connector {
+      display: none;
+    }
+  }

@@ -1,0 +1,11 @@
+.result-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .result-main {
+    flex: 1;
+    padding: 120px 0 60px;
+    background-color: #f9fafb;
+  }

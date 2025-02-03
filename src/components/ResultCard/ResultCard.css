@@ -1,0 +1,128 @@
+.result-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #f9fafb;
+  }
+  
+  .result-card {
+    width: 100%;
+    max-width: 800px;
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .result-card h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #1f2937;
+    margin-bottom: 2rem;
+  }
+  
+  .result-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .result-item {
+    padding: 1.5rem;
+    background: #f8fafc;
+    border-radius: 12px;
+  }
+  
+  .result-item.full-width {
+    grid-column: 1 / -1;
+  }
+  
+  .result-item h3 {
+    font-size: 1.1rem;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+  }
+  
+  .result-item p {
+    font-size: 1.25rem;
+    color: #1f2937;
+    font-weight: 600;
+  }
+  
+  .severity-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+  }
+  
+  .severity-badge.critical {
+    background-color: #fee2e2;
+    color: #dc2626;
+  }
+  
+  .severity-badge.high {
+    background-color: #fff7ed;
+    color: #ea580c;
+  }
+  
+  .severity-badge.medium {
+    background-color: #fef3c7;
+    color: #d97706;
+  }
+  
+  .needs-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .needs-list li {
+    padding: 0.75rem;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #4b5563;
+  }
+  
+  .result-actions {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .btn-secondary {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #e5e7eb;
+    color: #4b5563;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #d1d5db;
+  }
+  
+  .result-error {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  @media (max-width: 640px) {
+    .result-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .result-card {
+      padding: 1.5rem;
+    }
+  }
